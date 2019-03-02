@@ -1,0 +1,95 @@
+// Styling for the navbar
+#mainNav {
+    border-bottom: 1px solid fade-out($gray-900, .9);
+    background-color: $white;
+    @include sans-serif-font;
+    @include transition-all;
+
+    .navbar-brand {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $primary-font;
+        @include sans-serif-font;
+
+        &:focus,
+        &:hover {
+            color: darken($primary-font, .1);
+        }
+    }
+
+    .navbar-nav {
+        > li.nav-item {
+            > a.nav-link,
+            > a.nav-link:focus {
+                font-size: .75rem;
+                font-weight: 700;
+                margin-top: 7px;
+                text-transform: uppercase;
+                color: $gray-900;
+
+                &:hover {
+                    color: $black;
+                }
+
+                &.active {
+                    color: $primary-font !important;
+                    background-color: $white;
+
+                    &:hover {
+                        background-color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        border-color: $white;
+        background-color: $white;
+
+        .navbar-brand {
+            color: fade-out($primary-font, .0);
+
+            &:focus,
+            &:hover {
+                color: $black;
+            }
+        }
+
+        .navbar-nav > li.nav-item > a.nav-link {
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-nav > li.nav-item > a.nav-link,
+        .navbar-nav > li.nav-item > a.nav-link:focus {
+            color: fade-out($black, .0);
+
+            &:hover {
+                color: $primary-font;
+            }
+        }
+
+        &.navbar-shrink {
+            border-bottom: 1px solid fade-out($gray-900, .9);
+            background-color: $white;
+
+            .navbar-brand {
+                color: $primary-font;
+
+                &:focus,
+                &:hover {
+                    color: darken($black, .0);
+                }
+            }
+
+            .navbar-nav > li.nav-item > a.nav-link,
+            .navbar-nav > li.nav-item > a.nav-link:focus {
+                color: $gray-900;
+
+                &:hover {
+                    color: $primary-font;
+                }
+            }
+        }
+    }
+}
