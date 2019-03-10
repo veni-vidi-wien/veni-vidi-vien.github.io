@@ -19,6 +19,23 @@
     text-align: left;
 }
 
+
+summary:before {
+    content: "Mehr erfahren"; /* Verwendung des "plus"-Symbols anstelle des Dreiecks */
+    color: $black;
+    font-weight: bold;
+    display: inline-block;
+    width: 90%;
+    font-style: italic;
+    margin-right: 5px;
+}
+
+
+details[open] summary:before {
+    content: "Schlie\00df en";
+}
+
+
 .text-dark {
     text-align: left !important;
     color: #343a40 !important;
