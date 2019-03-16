@@ -343,16 +343,29 @@ details[open] summary:before {
 }
 
 .btn-primary {
-  background-color: #ffe8d6 !important;
-  border-color: #FFF6EF;
+  background-color: #FFD7BB;
   color: #000;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #EA0508;
-  background-color: #fff;
+  background-color: #FFF6EF;
 }
 
-.btn-primary:active, .btn-primary:focus {
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+.btn-light {
+  background-color: #FFD7BB;
+  color: #000;
+}
+
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  color: #EA0508;
+  background-color: #FFF6EF;
+}
+
+.btn-light:hover, .btn-light:active, .btn-light:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }

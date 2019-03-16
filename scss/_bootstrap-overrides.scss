@@ -47,17 +47,35 @@ details[open] summary:before {
 }
 
 .btn-primary {
-    background-color: darken($primary, 5%) !important;
-    border-color: $primary;
+    background-color: #FFD7BB;
     color: $black;
 
     &:hover,
     &:focus,
     &:active {
         color: $primary-font;
-        background-color: $white;
+        background-color: $primary;
     }
 
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
+    }
+}
+
+.btn-light {
+    background-color: #FFD7BB;
+    color: $black;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $primary-font;
+        background-color: $primary;
+    }
+
+    &:hover,
     &:active,
     &:focus {
         box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
