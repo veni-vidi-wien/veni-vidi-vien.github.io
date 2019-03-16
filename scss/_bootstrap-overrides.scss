@@ -35,6 +35,16 @@ details[open] summary:before {
     content: "Schlie\00df en";
 }
 
+.url-dark {
+    text-decoration: none;
+    color: #343a40 !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+}
 
 .text-dark {
     text-align: left !important;

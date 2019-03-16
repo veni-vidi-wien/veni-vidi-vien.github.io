@@ -15,7 +15,7 @@ hr {
 }
 
 hr.light {
-  border-color: #fff;
+  border-color: black;
 }
 
 a {
@@ -68,7 +68,7 @@ h6 {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 8.5rem 0;
 }
 
 .section-heading {
@@ -330,6 +330,15 @@ summary:before {
 
 details[open] summary:before {
   content: "Schlie\00df en";
+}
+
+.url-dark {
+  text-decoration: none;
+  color: #343a40 !important;
+}
+
+.url-dark:hover, .url-dark:focus, .url-dark:active {
+  text-decoration: none;
 }
 
 .text-dark {
