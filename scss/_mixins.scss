@@ -5,10 +5,11 @@
   transition: all 0.2s;
 }
 @mixin background-cover() {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
 }
 @mixin serif-font() {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
